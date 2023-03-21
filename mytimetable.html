@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TimeTable</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+  <body>
+
+    <div id="header1">
+
+      <div class="container">
+        <nav>
+          <h1 style="font-size: 30px; color: #009E36;">TimeTable</h1>
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <h1>Student Data</h1>
+
+      <form method="POST" name="sample">
+        <br>
+        
+        <label for="day">Day:</label>
+
+          <select id="day">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+          </select>
+
+        <label for="time">Time:</label>
+
+          <select id="time">
+            <option value="08:00 - 09:30">08:00 - 09:30</option>
+            <option value="09:30 - 11:00">09:30 - 11:00</option>
+            <option value="11:00 - 12:30">11:00 - 12:30</option>
+            <option value="12:30 - 14:00">12:30 - 14:00</option>
+            <option value="14:00 - 15:30">14:00 - 15:30</option>
+            <option value="15:30 - 17:00">15:30 - 17:00</option>
+          </select>
+
+        <label for="subject">Subject:</label>
+
+          <select id="subject" name="subject">
+            <option value="Applied Artificial Intelligence">Applied AI</option>
+            <option value="Algorithms">Algorithms</option>
+            <option value="Computer Networks">Comp Networks</option>
+            <option value="Information Security">Info Security</option>
+            <option value="Web Engineering">Web Engineering</option>
+          </select>
+
+        <div class="input-button">
+          <input type="button" name="add" value="Add Agenda" onclick="addStudent();"><hr>
+        </div>
+
+          <table id="timetable" class="table" border="1">
+            <thead>
+            <th>Day</th> 
+            <th>Time</th>
+            <th>Subject</th>
+            <th>Delete</th>
+            
+            </thead>
+              <tbody>
+                  
+              </tbody>
+          </table>
+        
+
+      </form>
+    </div>
+
+  </body>
+</html>

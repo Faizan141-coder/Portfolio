@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42acbca355.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 style="font-size: 30px;"><span>Portfolio</span></h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="mytimetable.html">TimeTable</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p><span>React Native </span>Developer</p>
+            <h1>Faizan Hasnaat</h1>
+        </div>
+
+        <div class="header-img">
+          <img src="images/background1.jpg" alt="Avatar">
+        </div>
+
+    </div>
+</div>
+
+<!-- ------------about------------ -->
+<div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                      Hello and welcome! My name is Faizan Hasnaat, and I am a Software Engineer with a passion 
+                      for App Development. I have 2 years of experience in React Native, and I am constantly 
+                      striving to improve my skills and knowledge. I am dedicated to delivering high-quality work 
+                      and providing exceptional customer service. Thank you for visiting my portfolio website!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>React Native Training at Systems Inc.</li>
+                            <li><span>2022</span><br>Team Lead at Nascon.</li>
+                            <li><span>2021</span><br>Head of FAST Gaming Society.</li>
+                            <li><span>2020</span><br>Internship at DevSinc.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span><br>Software Engineering - FAST NUCES</li>
+                            <li><span>2018 - 2020</span><br>KIPS College</li>
+                            <li><span>2016 - 2018</span><br>KIPS School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------courses--------------- -->
+
+<div id="courses">
+    <div class="container">
+        <h1 class="sub-title">My Courses</h1>
+        <div class="courses-list">
+
+            <div>
+                <h2>Web Engineering</h2>
+                    <p>
+                    Web Engineering course covers development, maintenance, and design of web applications 
+                    using various technologies and methodologies.
+                    </p>
+            </div>
+
+            <div>
+                <h2>Comp Networks</h2>
+                    <p>
+                    Computer Networks course teaches the concepts and protocols involved in the communication
+                    between computer systems.
+                    </p>
+            </div>
+
+            <div>
+                <h2>Info Security</h2>
+                    <p>
+                    Information Security course covers the principles and techniques for protecting information 
+                    and information systems from unauthorized access, use, and disclosure.
+                    </p>
+            </div>
+
+            <div>
+                <h2>Process Mining</h2>
+                    <p>
+                    Process Mining course teaches how to extract knowledge from event logs to improve business 
+                    processes.
+                    </p>
+            </div>
+
+            <div>
+                <h2>Algorithms</h2>
+                    <p>
+                    Algorithms course teaches the design, implementation, and analysis of efficient algorithms 
+                    for solving computational problems.
+                    </p>
+            </div>
+
+            <div>
+                <h2>Applied AI</h2>
+                    <p> 
+                    Applied AI course focuses on the practical applications of artificial intelligence in 
+                    various fields and industries.
+                    </p>
+            </div>
+
+        </div>
+    </div> 
+</div>
+
+
+<!-- -----------projects--------------- -->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="courses-list">
+
+            <div>
+                <h2>E-Commerce Website</h2>
+                <p>
+                    An online marketplace that facilitates the buying and selling of goods or services 
+                    over the internet. The website should have features like product listings, shopping 
+                    cart, payment gateway, and user authentication.
+                </p>
+            </div>
+
+            <div>
+                <h2>Bug Tracking System</h2>
+                <p>
+                    A web application that helps software development teams track bugs and issues in 
+                    their projects. It should allow users to report bugs, assign them to team members, 
+                    track the status, and send notifications when the issue is resolved.
+                </p>
+            </div>
+
+            <div>
+                <h2>Recipe App</h2>
+                <p>
+                    A mobile app that helps users discover, save, and share recipes. The app should 
+                    allow users to search for recipes, save them to a personal recipe box, and share 
+                    them with friends. It can also include features like meal planning and grocery 
+                    list generation.
+                </p>
+            </div>
+
+            <div>
+                <h2>Chatbot</h2>
+                <p>
+                    A conversational agent that can communicate with users via text or voice. The chatbot 
+                    can be designed to answer frequently asked questions, provide customer support, or 
+                    automate simple tasks like appointment scheduling.
+                </p>
+            </div>
+
+            <div>
+                <h2>Social Network</h2>
+                <p>
+                    A web application that allows users to create profiles, connect with friends, and share 
+                    content. The platform should have features like news feed, user authentication, messaging, 
+                    and photo/video sharing.
+                </p>
+            </div>
+
+            <div>
+                <h2>Content Management System</h2>
+                <p> 
+                    A web application that helps users create, manage, and publish digital content. The CMS 
+                    should have features like content creation, editing, versioning, and publishing. It can 
+                    be used for blogs, news sites, or other content-heavy websites.
+                </p>
+            </div>
+
+        </div>
+    </div> 
+</div>
+
+
+<!-- -----------copyright------------ -->
+
+<div class="copyright">
+  <p>Copyright © Faizan. Made with <i class="fas fa-heart"></i></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
